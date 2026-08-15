@@ -1,0 +1,179 @@
+@import url('https://fonts.googleapis.com/css2?family=Playfair+Display:wght@400;700;900&display=swap');
+:root{
+--preto: #111;
+--amarelo: #d6b63c;
+--cinza1: #333;
+--cinza2: #777;
+}
+
+
+
+
+
+* {
+    box-sizing: border-box;
+}
+
+body {
+    margin: 0;
+    background: #111111;
+    color: white;
+    font-family: Arial, Helvetica, sans-serif;
+}
+
+
+header {
+    background: linear-gradient(to bottom,
+            #1c1c1c,
+            #080808);
+
+    border-bottom: 4px solid #d6b63c;
+    padding: 35px 20px 25px;
+    text-align: center;
+}
+
+
+header img {
+    width: 600px;
+    max-width: 90%;
+    height: auto;
+
+    display: block;
+    margin: 0 auto;
+
+    border: none;
+    border-radius: 0;
+    background: transparent;
+}
+
+nav {
+    background: #050505;
+    border-bottom: 2px solid #333;
+    padding: 15px;
+    text-align: center;
+}
+
+nav ul {
+    list-style: none;
+    margin: 0;
+    padding: 0;
+}
+
+nav li {
+    display: inline-block;
+    margin: 0 15px;
+}
+
+nav a {
+    color: #d6b63c;
+    text-decoration: none;
+    font-family: "Playfair Display", serif;
+    font-size: 20px;
+    font-weight: bold;
+
+    transition: 0.3s;
+}
+
+nav a:hover {
+    color: white;
+    text-shadow: 0 0 10px #d6b63c;
+}
+
+main {
+    width: 90%;
+    max-width: 1000px;
+    margin: 40px auto;
+}
+
+section {
+    background: #1b1b1b;
+
+    margin-bottom: 30px;
+    padding: 30px;
+
+    border-left: 5px solid #d6b63c;
+    border-radius: 8px;
+
+    box-shadow: 0 5px 20px rgba(0, 0, 0, 0.5);
+}
+
+h2 {
+    color: #d6b63c;
+
+    font-family: "Playfair Display", serif;
+
+    font-size: 32px;
+
+    margin-top: 0;
+    margin-bottom: 15px;
+
+    border-left: none;
+    padding-left: 0;
+}
+
+p {
+    color: #dddddd;
+    font-size: 17px;
+    line-height: 1.6;
+}
+
+iframe {
+    display: block;
+
+    width: 800px;
+    height: 450px;
+
+    max-width: 100%;
+
+    margin: 30px auto 10px;
+
+    border: 2px solid #d6b63c;
+    border-radius: 12px;
+}
+
+
+footer {
+    background: #050505;
+
+    border-top: 3px solid #d6b63c;
+
+    padding: 40px 20px;
+
+    text-align: center;
+}
+
+footer p {
+    color: #777;
+    margin: 0;
+}
+
+
+@media (max-width: 600px) {
+
+    header img {
+        width: 95%;
+    }
+
+    nav li {
+        display: block;
+        margin: 12px;
+    }
+
+    nav a {
+        font-size: 18px;
+    }
+
+    section {
+        padding: 20px;
+    }
+
+    h2 {
+        font-size: 26px;
+    }
+
+    iframe {
+        width: 100%;
+        height: auto;
+        aspect-ratio: 16 / 9;
+    }
+}

@@ -1,19 +1,33 @@
-### Aula 1: Atividade prática
-# Currículo on-line
+Aula 03 ====================================================================================
 
-## ContextoVocê vai construir a primeira
- versão do seu currículo pessoal em HTML puro. Essa página vai servir de base para os próximos exercícios do curso.
+--------------------------------------------------------- exercicio.md
 
-## O que a página precisa ter
+# Site de Divulgação
+### Parte 1: home + estrutura de navegação
 
-- Um `header` com seu nome e um subtítulo curto (ex.: profissão ou área de atuação).
-- Um `nav` logo abaixo do `header`, com uma lista de links (`ul`/`li` + `a`) que levam, por âncora (`id`), até cada seção da página — ex.: "Resumo", "Experiência", "Contato".
-- Um `main` contendo pelo menos três `section`, cada uma com um `id` correspondente a um link do menu:
-  - Uma seção de resumo/apresentação (um parágrafo curto sobre você).
-  - Uma seção de experiência ou projetos (pode usar uma lista, `ul`/`li`, para organizar).
-  - Uma seção de contato, com pelo menos um link externo (ex.: LinkedIn ou portfólio) usando `target="_blank"`.
-- Use `hr` para separar visualmente pelo menos duas seções.
-- Use `br` em algum ponto onde faça sentido quebrar uma linha dentro de um mesmo parágrafo (ex.: endereço ou dados de contato).
+## Contexto
+Você foi contratado para criar um site oficial de divulgação de um jogo. O site deverá conter 3 páginas. A principal deverá conter seções com texto falando brevemente sobre o jogo, o vídeo de teaser e uma amostra de trilha sonora. As demais páginas vão falar sobre as diferentes edições do jogo e um formulário de lista de espera que serão desenvolvidos nas próximas aulas.
+
+## index.html — página principal (foco de hoje):
+
+Esta deve conter:
+
+- header com o nome do jogo (pode ser logo em imagem ou texto — escolha um formato e use o mesmo nos 3 arquivos).
+- nav com links para as 3 páginas: index.html, planos.html, contato.html.
+- main com pelo menos 3 section
+- Sobre o jogo: um parágrafo de apresentação.
+- Trailer: um video com controls, usando um arquivo seu (ou um de amostra, se ainda não tiver um pronto).
+- Trilha sonora — um audio com controls.
+- footer com o nome do jogo.
+
+## edicoes.html e lista_espera.html (placeholders)
+
+- Mesmo header, nav e footer do index.html.
+- Dentro do main, uma única section com um título indicando o que vai entrar ali (ex.: "Edições — em construção") e um parágrafo curto explicando o que a página vai conter no futuro.
+Essas páginas não precisam de conteúdo final ainda — o objetivo hoje é só provar que a navegação entre as 3 funciona e que o visual se mantém igual em todas.
 
 ## Critério de entrega
-Ao clicar em cada item do menu (`nav`), a página deve rolar até a seção correspondente. Ao clicar no link externo, ele deve abrir em uma nova aba.
+
+- Clicar em qualquer item do menu, em qualquer uma das 3 páginas, leva à página correta.
+- title, header e footer são idênticos nas 3 páginas (sem sobra de nome de projeto anterior).
+- Vídeo e áudio tocam sem erro no console do navegador.

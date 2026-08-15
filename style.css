@@ -1,6 +1,9 @@
+@import url('https://fonts.googleapis.com/css2?family=Playfair+Display:ital,wght@0,400..900;1,400..900&display=swap');
+
 h1 {
     color: darkblue;
     font-size: 25px;
+    max-width: 900px;
 
 
 }
@@ -10,84 +13,121 @@ h1 {
 
 
 h2 {
-    color: blue;
+    color: rgb(0, 0, 0);
     font-family: Arial, Helvetica, sans-serif;
-    border-left: 3px blue;
+
     padding-left: 10px;
+    border-left: 5px rgb(0, 0, 0);
+    max-width: 900px;
 
 }
+
 p {
-font-family: Arial, Helvetica, sans-serif;
+    font-family: Arial, Helvetica, sans-serif;
 }
 
 #resumo {
-color: rgb(0, 0, 0);
+    color: rgb(0, 0, 0);
 
 }
 
 img {
     border-radius: 100px;
-    border: 2px  solid black;
+    border: 2px solid rgb(51, 46, 46);
+    margin-left: 550px;
+    background-color: rgb(51, 46, 46);
+    margin-bottom: 100px;
+    width: 800px;
+    height: 400px;
+    align-items: center;
+    max-width: 900px;
+
+
 
 }
 
 section {
-    border: 2px solid gray;
+
     margin: 35px;
     padding: 15px;
 
     /*     
 
 padding-right: 100px;
-    padding-left: 20px */;
+    padding-left: 20px */
+    ;
 }
 
 nav {
-    background-color: gray;
-    margin: 3px;
+    background-color: rgb(0, 0, 0);
+    margin-left: -400px;
+    margin-right: -400px;
     padding: 1px;
-    border-bottom: 2px  solid rgb(0, 0, 0);
+    border-bottom: 2px solid rgb(0, 0, 0);
     color: white;
     padding-left: 15px;
 
-    
+
 }
 
 nav ul {
     list-style-type: none;
     padding: 0;
-    margin: 0;
-   color: white;
+    margin-left: 400px;
+    margin-right: 400px;
+    color: white;
 
 }
+
 nav li {
     display: inline-block;
     margin-right: 15px;
 }
+
 header {
-background-color: darkcyan;
-border-bottom: 2px  solid rgb(0, 0, 0);
-margin-right: 3px;
-padding: 30px;
-margin-left: 3px;
+    background-color: rgb(51, 46, 46);
+    border-bottom: 5px solid rgb(0, 0, 0);
+    margin-top: -100px;
+
+
 
 
 
 }
+
 header P {
-    color: white;
+    color: rgb(0, 0, 0);
     font-size: medium;
+
     &:hover {
         font-size: x-large;
     }
 }
+
 a {
     text-decoration: none;
-    color: rgb(43, 48, 48);
-    font-size: large;
-&:hover{
-    color: black;
+    color: rgb(120, 122, 122);
+    font-size: xx-large;
+    padding-left: 350px;
+
+    &:hover {
+        color: rgb(255, 255, 255);
+        font-family: "Playfair Display";
+
+
+    }
+
+
 }
+
+footer {
+
+    background-color: black;
+
+}
+
+body {
+    background-color: #f4f4f4;
 
 }
 
@@ -96,3 +136,16 @@ a {
 
 color: black;
 } */
+iframe {
+    border-radius: 25px;
+    width: 400px;
+    height: 225px;
+    max-width: 900px;
+
+
+}
+
+main {
+
+    max-width: 900px;
+}
