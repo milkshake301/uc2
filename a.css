@@ -70,13 +70,13 @@ nav a {
     font-family: "Playfair Display", serif;
     font-size: 20px;
     font-weight: bold;
-
-    transition: 0.3s;
+    transition: 0,3s;
 }
 
 nav a:hover {
     color: white;
     text-shadow: 0 0 10px #d6b63c;
+    font-size: 22px;
 }
 
 main {
@@ -174,6 +174,72 @@ footer p {
     iframe {
         width: 100%;
         height: auto;
-        aspect-ratio: 16 / 9;
+       
     }
+}
+.letra-amarela {
+
+    color: #d6b63c;
+
+    font-family: "Playfair Display", serif;
+
+    font-size: 32px;
+
+}
+
+
+
+
+
+.tabela-edicoes {
+    width: 100%;
+    border-collapse: collapse;
+    margin-top: 15px;
+}
+
+.tabela-edicoes caption {
+    caption-side: top;
+    text-align: left;
+    font-weight: bold;
+    margin-bottom: 10px;
+}
+
+.tabela-edicoes th,
+.tabela-edicoes td {
+    border: 1px solid #444;
+    padding: 10px 12px;
+    text-align: center;
+    background-color: #1b1b1b;
+    color: #ddd;
+}
+
+.tabela-edicoes thead th {
+    background-color: #202020;
+    color: #d6b63c;
+}
+
+.tabela-edicoes th[scope="row"] {
+    text-align: left;
+    background-color: #222;
+    color: white;
+}
+
+.status-ativo {
+    background-color: #d6b63c !important;
+    color: #111 !important;
+    font-weight: bold;
+}
+
+.status-encerrado {
+    background-color: #333 !important;
+    color: #999 !important;
+    font-weight: bold;
+}
+
+.tabela-edicoes tbody tr:hover td {
+    background-color: #292929;
+}
+
+.tabela-edicoes tbody tr:hover th {
+    background-color: #292929;
 }
