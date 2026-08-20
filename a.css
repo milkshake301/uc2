@@ -1,9 +1,10 @@
 @import url('https://fonts.googleapis.com/css2?family=Playfair+Display:wght@400;700;900&display=swap');
-:root{
---preto: #111;
---amarelo: #d6b63c;
---cinza1: #333;
---cinza2: #777;
+
+:root {
+    --preto: #111;
+    --amarelo: #d6b63c;
+    --cinza1: #333;
+    --cinza2: #777;
 }
 
 
@@ -70,7 +71,7 @@ nav a {
     font-family: "Playfair Display", serif;
     font-size: 20px;
     font-weight: bold;
-    transition: 0,3s;
+    transition: 0, 3s;
 }
 
 nav a:hover {
@@ -174,9 +175,10 @@ footer p {
     iframe {
         width: 100%;
         height: auto;
-       
+
     }
 }
+
 .letra-amarela {
 
     color: #d6b63c;
@@ -195,6 +197,7 @@ footer p {
     width: 100%;
     border-collapse: collapse;
     margin-top: 15px;
+
 }
 
 .tabela-edicoes caption {
@@ -202,6 +205,7 @@ footer p {
     text-align: left;
     font-weight: bold;
     margin-bottom: 10px;
+
 }
 
 .tabela-edicoes th,
@@ -211,17 +215,22 @@ footer p {
     text-align: center;
     background-color: #1b1b1b;
     color: #ddd;
+
+
 }
 
 .tabela-edicoes thead th {
     background-color: #202020;
     color: #d6b63c;
+
 }
 
 .tabela-edicoes th[scope="row"] {
     text-align: left;
     background-color: #222;
     color: white;
+
+
 }
 
 .status-ativo {
@@ -242,4 +251,61 @@ footer p {
 
 .tabela-edicoes tbody tr:hover th {
     background-color: #292929;
+}
+
+
+.form-lista-espera {
+    max-width: 420px;
+    margin-top: 15px;
+}
+
+.form-lista-espera label {
+    margin-bottom: 5px;
+    flex-direction: column;
+}
+
+
+
+.campo {
+    display: flex;
+    flex-direction: column;
+    gap: 15px;
+    color: #d6b63c;
+}
+
+.campo label {
+    font-weight: bold;
+    color: #d6b63c;
+    font-family: "Playfair Display", serif;
+}
+
+.campo input {
+    width: 100%;
+    padding: 12px;
+    background-color: #333;
+    color: white;
+    border: 1px solid #555;
+    border-radius: 4px;
+    font-size: large;
+}
+ 
+
+button {
+    margin: 20px;
+    display: flex;
+    flex-direction: column;
+    background-color: #555;
+    color: #d6b63c;
+    border-radius: 4px;
+    padding: 6px;
+    border: 1px solid #d6b63c;
+
+}
+
+button:hover {
+    color: #f0f0f0;
+    padding: 7.5px;
+    transition: 0.4s;
+    text-shadow: 0 0 10px #d6b63c;
+
 }
