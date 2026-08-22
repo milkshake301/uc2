@@ -7,10 +7,6 @@
     --cinza2: #777;
 }
 
-
-
-
-
 * {
     box-sizing: border-box;
 }
@@ -22,26 +18,21 @@ body {
     font-family: Arial, Helvetica, sans-serif;
 }
 
-
 header {
     background: linear-gradient(to bottom,
             #1c1c1c,
             #080808);
-
     border-bottom: 4px solid #d6b63c;
     padding: 35px 20px 25px;
     text-align: center;
 }
 
-
 header img {
     width: 600px;
     max-width: 90%;
     height: auto;
-
     display: block;
     margin: 0 auto;
-
     border: none;
     border-radius: 0;
     background: transparent;
@@ -71,7 +62,7 @@ nav a {
     font-family: "Playfair Display", serif;
     font-size: 20px;
     font-weight: bold;
-    transition: 0, 3s;
+    transition: 0.3s; /* Corrigido de 0, 3s */
 }
 
 nav a:hover {
@@ -88,26 +79,19 @@ main {
 
 section {
     background: #1b1b1b;
-
     margin-bottom: 30px;
     padding: 30px;
-
     border-left: 5px solid #d6b63c;
     border-radius: 8px;
-
     box-shadow: 0 5px 20px rgba(0, 0, 0, 0.5);
 }
 
 h2 {
     color: #d6b63c;
-
     font-family: "Playfair Display", serif;
-
     font-size: 32px;
-
     margin-top: 0;
     margin-bottom: 15px;
-
     border-left: none;
     padding-left: 0;
 }
@@ -120,26 +104,18 @@ p {
 
 iframe {
     display: block;
-
     width: 800px;
     height: 450px;
-
     max-width: 100%;
-
     margin: 30px auto 10px;
-
     border: 2px solid #d6b63c;
     border-radius: 12px;
 }
 
-
 footer {
     background: #050505;
-
     border-top: 3px solid #d6b63c;
-
     padding: 40px 20px;
-
     text-align: center;
 }
 
@@ -148,56 +124,40 @@ footer p {
     margin: 0;
 }
 
-
 @media (max-width: 600px) {
-
     header img {
         width: 95%;
     }
-
     nav li {
         display: block;
         margin: 12px;
     }
-
     nav a {
         font-size: 18px;
     }
-
     section {
         padding: 20px;
     }
-
     h2 {
         font-size: 26px;
     }
-
     iframe {
         width: 100%;
         height: auto;
-
     }
 }
 
 .letra-amarela {
-
     color: #d6b63c;
-
     font-family: "Playfair Display", serif;
-
     font-size: 32px;
-
 }
 
-
-
-
-
+/* --- TABELAS --- */
 .tabela-edicoes {
     width: 100%;
     border-collapse: collapse;
     margin-top: 15px;
-
 }
 
 .tabela-edicoes caption {
@@ -205,7 +165,6 @@ footer p {
     text-align: left;
     font-weight: bold;
     margin-bottom: 10px;
-
 }
 
 .tabela-edicoes th,
@@ -215,22 +174,17 @@ footer p {
     text-align: center;
     background-color: #1b1b1b;
     color: #ddd;
-
-
 }
 
 .tabela-edicoes thead th {
     background-color: #202020;
     color: #d6b63c;
-
 }
 
 .tabela-edicoes th[scope="row"] {
     text-align: left;
     background-color: #222;
     color: white;
-
-
 }
 
 .status-ativo {
@@ -245,10 +199,7 @@ footer p {
     font-weight: bold;
 }
 
-.tabela-edicoes tbody tr:hover td {
-    background-color: #292929;
-}
-
+.tabela-edicoes tbody tr:hover td,
 .tabela-edicoes tbody tr:hover th {
     background-color: #292929;
 }
@@ -259,18 +210,14 @@ footer p {
     margin-top: 15px;
 }
 
-.form-lista-espera label {
-    margin-bottom: 5px;
-    flex-direction: column;
-}
-
-
-
 .campo {
     display: flex;
     flex-direction: column;
-    gap: 15px;
+    gap: 8px; 
     color: #d6b63c;
+    justify-content: center;
+    align-items: flex-start;
+    margin-bottom: 20px;
 }
 
 .campo label {
@@ -279,7 +226,10 @@ footer p {
     font-family: "Playfair Display", serif;
 }
 
-.campo input {
+
+.campo input, 
+.campo select, 
+.campo textarea {
     width: 100%;
     padding: 12px;
     background-color: #333;
@@ -287,25 +237,97 @@ footer p {
     border: 1px solid #555;
     border-radius: 4px;
     font-size: large;
+    font-family: Arial, Helvetica, sans-serif; 
 }
- 
+
+
+select option {
+    background-color: #555;
+    color: white;
+}
+
+
+textarea {
+    resize: vertical; 
+    transition: 0.4s;
+}
+
+textarea:hover {
+    color: #f0f0f0;
+    text-shadow: 0 0 10px #d6b63c;
+    border-color: #d6b63c;
+}
+
+textarea:focus {
+    outline: none;
+    border-color: #d6b63c;
+    text-shadow: 0 0 10px #d6b63c;
+}
+
+
+fieldset {
+    margin: 20px 0;
+    padding: 15px;
+    background-color: #333;
+    border: 1px solid #555;
+    border-radius: 4px;
+}
+
+fieldset legend {
+    color: #d6b63c;
+    font-family: "Playfair Display", serif;
+    font-weight: bold;
+    padding: 0 5px;
+}
+
+
+fieldset label {
+    display: flex;
+    flex-direction: row; 
+    align-items: center; 
+    gap: 10px; 
+    background-color: transparent;
+    color: #d6b63c;
+    font-family: "Playfair Display", serif;
+    font-weight: normal;
+    margin-bottom: 12px;
+    cursor: pointer;
+}
+
+fieldset input[type="radio"],
+fieldset input[type="checkbox"] {
+    width: auto;
+    margin: 0; 
+    accent-color: #d6b63c;
+}
+
 
 button {
-    margin: 20px;
-    display: flex;
-    flex-direction: column;
+    margin-top: 20px;
+    width: 100%; 
     background-color: #555;
     color: #d6b63c;
+    font-family: "Playfair Display", serif;
+    font-size: 18px;
+    font-weight: bold;
     border-radius: 4px;
-    padding: 6px;
+    padding: 12px;
     border: 1px solid #d6b63c;
-
+    cursor: pointer;
+    transition: 0.4s;
 }
 
 button:hover {
-    color: #f0f0f0;
-    padding: 7.5px;
-    transition: 0.4s;
-    text-shadow: 0 0 10px #d6b63c;
+    color: #111;
+    background-color: #d6b63c;
+    text-shadow: none;
+}
 
+.form-lista-espera input[type="color"] {
+    padding: 2px;
+    width: 60px;
+    height: 35px;
+    border: 1px solid #cccccc;
+    border-radius: 4px;
+    cursor: pointer;
 }

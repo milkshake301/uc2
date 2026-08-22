@@ -1,0 +1,137 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+    <link rel="stylesheet" href="a.css">
+
+    <title>Marvel Rivals</title>
+</head>
+
+<body>
+
+    <header>
+
+        <img src="https://www.marvelrivals.com/pc/gw/20241128194803/img/logo_95906827.png" alt="Logo do Marvel Rivals">
+
+    </header>
+
+
+    <nav>
+
+        <ul>
+
+            <li>
+                <a href="p1.html" target="_blank">
+                    Events
+                </a>
+            </li>
+
+            <li>
+                <a href="p2.html" target="_blank">
+                    News
+                </a>
+            </li>
+
+            <li>
+                <a href="p3.html" target="_blank">
+                    Quiz
+                </a>
+            </li>
+
+        </ul>
+
+    </nav>
+
+
+
+    <main>
+
+        <div class="campo">
+            <label for="plataforma">plataforma preferida</label>
+            <select name="plataforma" id="plataforma">
+                <option value="">Selecione...</option>
+                <option value="PC">PC</option>
+                <option value="Playstation">Playstation</option>
+                <option value="xbox">xbox</option>
+                <option value="switch">Nintendo Switch</option>
+
+            </select>
+        </div>
+
+        <fieldset class="campo">
+            <legend>Você joga o modo rankeado</legend>
+
+            <label for="ranked-sim">
+                <input type="radio" id="ranked-sim" name="ranked" value="sim">
+                Sim
+
+            </label>
+
+
+            <label for="ranked-nao">
+                <input type="radio" id="ranked-nao" name="ranked" value="nao">
+                Não
+
+            </label>
+        </fieldset>
+
+        <fieldset>
+            <legend class="campo">tempo de jogo</legend>
+
+            <label for="novidades">
+                <input type="checkbox" id="novidades" name="novidades" value="sim">
+                joga o jogo com frequencia
+            </label>
+
+            <label for="beta">
+                <input type="checkbox" id="beta" name="beta" value="sim">
+                joga o jogo com pouca frequencia
+            </label>
+        </fieldset>
+
+
+        </fieldset>
+
+        <div class="campo">
+            <label for="cor-favorita">Cor favorita</label>
+            <input type="color" id="cor-favorita" name="cor-favorita" value="#d6b63c">
+        </div>
+
+        <div class="campo">
+            <label for="fanart">Envie uma fanart (opcional)</label>
+            <input type="file" id="fanart" name="fanart" accept="image/*">
+        </div>
+
+
+        <div class="campo">
+            <label for="recado">Deixe um recado pro estúdio</label>
+            <textarea id="recado" name="recado" rows="4" placeholder="O que você mais espera do jogo?"></textarea>
+        </div>
+
+        <button type="submit">Entrar na lista de espera</button>
+
+        <button type="reset">Limpar Formulário</button>
+
+
+    </main>
+
+
+
+    <footer>
+
+        <p>
+            Marvel Rivals Fan Page
+        </p>
+
+        <p>
+            Site desenvolvido para fins educacionais.
+        </p>
+
+    </footer>
+
+</body>
+
+</html>

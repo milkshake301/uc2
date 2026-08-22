@@ -1,19 +1,34 @@
+# Projeto — Landing page de divulgação
 
-# Atividade prática — Estilizando o formulário de lista de espera
+**Prazo de entrega:** segunda-feira (24/08).
 
-O HTML do formulário (`form`, `label`, `input`, `button`) já foi montado. Agora é sua vez de estilizá-lo no `style.css`, deixando ele com cara de formulário de verdade, e não uma lista solta de campos.
+## Coé da parada?
 
-## O que fazer
+Vocês vão criar a **landing page de divulgação de um produto à sua escolha** — pode ser um jogo, um app, um produto físico, um serviço, uma marca fictícia... o que quiserem, desde que dê pra aplicar a estrutura especificada abaixo.
 
-- Limite a **largura** do formulário (não deixe os campos esticarem até a borda da tela).
-- Coloque cada **`label` acima do seu `input`** correspondente (em vez de lado a lado).
-- Dê **espaçamento entre os campos**, pra eles não ficarem colados uns nos outros.
-- Estilize os `input`: borda, `padding` interno e cantos arredondados (`border-radius`).
-- Estilize o `button`: cor de fundo, cor do texto, `padding` e `cursor: pointer`. Use `:hover` pra mudar a aparência do botão ao passar o mouse.
+## Estrutura mínima obrigatória
+
+A página deve ter, nessa ordem:
+
+1. **Header** — nome/logo do produto e uma frase de efeito (tagline).
+2. **Nav** — menu de navegação, com links (por âncora ou entre páginas, sua escolha) pras seções/páginas do site.
+3. **Seção "Sobre"** — apresentação do produto/serviço (o que é, pra quem é, por que interessa).
+4. **Seção de multimídia** — pelo menos um recurso: imagem, vídeo ou áudio, com boas práticas (`alt`, dimensões definidas).
+5. **Tabela** — comparando algo relevante ao seu produto (ex.: planos, versões, especificações). Deve ter cabeçalho definido e pelo menos uma célula mesclada (`colspan` ou `rowspan`).
+6. **Formulário** — de captura de contato/interesse (ex.: "quero saber mais", lista de espera, orçamento). Use pelo menos 4 tipos diferentes de campo (`text`, `email`, `select`, `radio`, `checkbox`, `textarea`, etc.).
+7. **Footer** — informações de rodapé (nome do produto, ano, links úteis).
+
+## Requisitos (o que será avaliado)
+
+- **HTML semântico**: uso correto de `header`, `nav`, `main`, `section`, `footer` — Use `div` apenas quando necessário.
+- **CSS externo**: todo o estilo num `.css` separado, ligado por `<link>`. Nenhum `style=""` inline.
+- **Boas práticas de imagem**: `alt` descritivo, `width`/`height` definidos.
+- **Links**: pelo menos um link externo com `target="_blank"`.
+- **Acessibilidade básica**: `label` associado a cada campo do formulário (`for`/`id`), uso de `fieldset`/`legend` nos grupos de `radio`/`checkbox`.
+- **Consistência visual**: cores, fontes e espaçamento coerentes entre as seções (não precisa ser bonito de design, precisa ser consistente).
 
 ## Critério de entrega
 
-- O formulário tem uma largura definida e não ocupa a tela inteira.
-- Todo campo tem espaçamento visual claro em relação aos outros.
-- O botão muda de aparência no `:hover`.
-- Nada de `style=""` inline — tudo no `estilos.css`.
+- Site funcional, sem erros no console do navegador.
+- Todos os 7 blocos da estrutura mínima presentes.
+- Todos os requisitos técnicos atendidos.
